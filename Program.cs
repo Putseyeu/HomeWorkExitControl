@@ -17,17 +17,16 @@ namespace HomeWorkExitControl
             Console.Write("Вы в клубе садомазо... Ваше стоп слово  exit. Чем хотите получить удар ?:");
             userSaid = Console.ReadLine();
 
-            if (userSaid == stopWord)
-            {
-                Console.Write("Вы сказали стоп слова. Приходите еще и приводите друзей.");
-            }
-            else if (userSaid != stopWord)
             {
                 while (userSaid != stopWord)
                 {
-                    Console.Write($"Вы получили удар {userSaid}. ");                 
-                    Console.Write("Чем хотите получить удар еще раз ?:");
+                    Console.Write($"udaR Вы получили удар {userSaid}. ");                 
+                    Console.Write(" vibor Чем хотите получить удар еще раз ?:");
                     userSaid = Console.ReadLine();
+                }
+                if (userSaid == stopWord)
+                {
+                    Console.Write("Вы сказали стоп слова. Приходите еще и приводите друзей.");
                 }
             }         
         }
